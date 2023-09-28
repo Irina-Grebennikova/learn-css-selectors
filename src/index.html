@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/strawberry.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>Yummy CSS - Fun with CSS Selectors</title>
+</head>
+
+<body>
+  <div class="page">
+    <main class="page__main main">
+      <header class="main__header">
+        <div class="main__logo logo">
+          <img class="logo__image" src="./assets/icons/app-logo.png" alt="" />
+          <div class="logo__text">Yummy CSS</div>
+        </div>
+      </header>
+      <div class="main__content main-content">
+        <section class="main-content__demo-block demo-block">
+          <h2 class="demo-block__task-desc">Select the apple on the plate</h2>
+          <div class="demo-block__table table">
+            <img class="table__table-img" src="./assets/images/table.png" alt="table-image" />
+             <!-- <div class="level-3">
+              <img class="level-3__creamer" src="./assets/images/creamer.png" alt="">
+              <div>
+                <img class="level-3__choco animate__animated animate__pulse animate__infinite" src="./assets/images/choco.png" alt="">
+                <img class="level-3__cone" src="./assets/images/cone.png" alt="cone-image">
+              </div>
+              <img class="level-3__cone" src="./assets/images/cone.png" alt="cone-image">
+            </div> -->
+          </div>
+
+        </section>
+        <div class="main-content__code-editor code-editor">
+          <section class="code-editor__file code-file">
+            <header class="code-file__header">
+              <h4 class="code-file__title">CSS Editor</h4>
+              <div class="code-file__filename">style.css</div>
+            </header>
+            <div class="code-file__code">
+              <div class="code-file__numbering code-file__numbering_css">1 2 3 4 5 6 7 8 9 <span>10 11 12 13 14 15</span></div>
+              <div class="code-file__container">
+                <input class="code-file__input" type="text" placeholder="Type in a CSS selector">
+                <a class="code-file__btn">enter</a>
+                <div>
+                  {<br>
+                  /* Styles would go here. */<br>
+                  }<br><br>
+                  /*<br>
+                  Type a number to skip to a level.<br>
+                  Ex → "5" for level 5<br>
+                  */
+                </div>
+                <div class="code-file__help"><img src="./assets/icons/question.png" alt="help"></div>
+              </div>
+            </div>
+          </section>
+          <section class="code-editor__file code-file">
+            <header class="code-file__header">
+              <h4 class="code-file__title">HTML Viewer</h4>
+              <div class="code-file__filename">table.html</div>
+            </header>
+            <div class="code-file__code">
+              <div class="code-file__numbering">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</div>
+              <div class="code-file__container html-code">
+                
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="main__footer footer-main">
+        <p class="footer-main__copyright">© 2023</p>
+        <a href="https://github.com/Irina-Grebennikova" target="_blank">
+          <img class="footer-main__icon" src="./assets/icons/github.png" alt="" />
+        </a>
+        <a href="https://rs.school/js/" target="_blank">
+          <img class="footer-main__icon" src="./assets/icons/rs-school.svg" alt="" />
+        </a>
+      </footer>
+    </main>
+    <aside class="page__aside aside">
+      <header class="aside__header header-aside">
+        <h3 class="header-aside__level"></h3>
+        <div class="header-aside__nav aside-nav">
+          <a class="aside-nav__arrow aside-nav__arrow_prev"></a>
+          <a class="aside-nav__arrow aside-nav__arrow_next"></a>
+          <div class="aside-nav__burger">
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <div class="aside__content">
+        <div class="aside__dropdown">
+          <div>Levels</div><div class="aside__triangle">▶</div>
+        </div>
+        <section class="aside__info info-aside">
+          <h4 class="info-aside__title">Descendant Selector</h4>
+          <p class="info-aside__short-desc">Select an element inside another element</p>
+          <div class="info-aside__template">A B</div>
+          <p class="info-aside__long-desc">Selects all B inside of A. B is called a descendant because it is inside of
+            another element.</p>
+        </section>
+        <section class="aside__examples examples">
+          <h5 class="examples__title">Examples</h5>
+          <p class="examples__example">p strong selects all strong elements that are inside of any p</p>
+          <p class="examples__example">#fancy span selects any span elements that are inside of the element with
+            id="fancy"</p>
+        </section>
+      </div>
+      <section class="aside__levels levels"> 
+        <h3 class="levels__title">Choose a level</h3>
+        <ol class="levels__list">
+          <!-- <li class="levels__link"><a href="#">.classname</a></li>
+          <li class="levels__link"><a href="#">A.classname</a></li>
+          <li class="levels__link"><a href="#">#id A</a></li> -->
+        </ol>
+        <a href="#level-1" class="levels__reset-btn">Reset progress</a>
+      </section>
+    </aside>
+  </div>
+  <section class="win">
+    <div class="win__popup">
+      <img class="win__gif" src="./assets/images/cool-badge.gif" alt="">
+      <h3 class="win__title">Hooray,<br>You win!</h3>
+      <div class="win__close"></div>
+    </div>
+  </section>
+</body>
+
+</html>
